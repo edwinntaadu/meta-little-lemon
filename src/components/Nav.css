@@ -1,0 +1,71 @@
+#menu-icon {
+    display: none;
+  }
+  
+  header .nav-menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Markazi Text", serif;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  header li {
+    margin-left: 20px;
+    text-transform: uppercase;
+  }
+  
+  .overlay {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #0000005e;
+    z-index: 2;
+  }
+  
+  .open {
+    max-height: 250px;
+    transition: max-height 0.1s ease;
+  }
+  .closing {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease;
+  }
+  
+  @media screen and (max-width: 767px) {
+    body .lock {
+      overflow: hidden;
+    }
+  
+    #menu-icon {
+      display: block;
+      position: relative;
+      z-index: 40;
+    }
+  
+    header .nav-menu {
+      display: none;
+      padding: 7rem 0;
+      position: absolute;
+      left: 30%;
+      top: 0;
+      height: 100vh;
+      width: 70%;
+      background-color: white;
+      z-index: 20;
+      transition: right 0.3s ease;
+    }
+  
+    .nav-menu li {
+      display: block;
+      margin-bottom: 1.5rem;
+      margin-left: 2rem;
+    }
+  }

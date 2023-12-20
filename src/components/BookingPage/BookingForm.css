@@ -1,0 +1,44 @@
+.form form > div {
+    margin-bottom: 25px;
+  }
+  .form form label {
+    padding-right: 20px;
+    width: 150px;
+  }
+  .form form input,
+  .form form select {
+    padding: 5px;
+    width: 300px;
+    height: 35px;
+    border: 1px solid var(--primary-green);
+    border-radius: 7px;
+  }
+  .form form input:focus,
+  .form form select:focus {
+    border: 2px solid var(--primary-yellow);
+  }
+  
+  .yellow-button {
+    padding: 10px 20px;
+    font-family: "Markazi Text", serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--highlight-dark);
+    border-radius: 10px;
+    background-color: var(--primary-yellow);
+  }
+  .form form .error {
+    color: var(--secondary-peach);
+  }
+  
+  @media screen and (max-width: 767px) {
+    .form {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .form form input,
+    .form form select {
+      width: 150px;
+    }
+  }

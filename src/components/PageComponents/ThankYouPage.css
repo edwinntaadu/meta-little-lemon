@@ -1,0 +1,16 @@
+.thanks {
+    margin: 50px auto;
+    padding: 20px;
+    /* position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%); */
+    width: 50%;
+    background-color: var(--highlight-light);
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .thanks li strong {
+    text-transform: capitalize;
+  }
